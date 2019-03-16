@@ -22,6 +22,10 @@ def get_msg():
 def send_text(msg, number):
 
 	# define account credentials
+        # 
+        # This key is invalid as of 20190316
+        # it exists purely as a reference.
+        #
 	account_sid = "AC928c4aabbb739945a8923d78423d3918"
 	account_token = "19159916a877dfed02d7e0b56f1b32f7"
 

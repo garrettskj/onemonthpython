@@ -5,6 +5,10 @@ import forecastio
 def get_weather(geo_lat, geo_long):
 
 	# specify your API key
+        # 
+        # This key is invalid as of 20190316
+        # it exists purely as a reference.
+        #
 	ds_apikey = "70066064325e7ce88afbcc4dd07a7595"
 
 	# do the lookup
