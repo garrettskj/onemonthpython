@@ -1,5 +1,10 @@
 from flask import Flask, render_template
+
+import darkskyapi
+
 application = Flask(__name__)
+
+
 
 @application.route("/")
 def hello():
@@ -8,8 +13,7 @@ def hello():
 
 @application.route("/weather")
 def weather():
-    get_weather = "the weather is..."
-    return render_template("weather.html", get_weather=get_weather)
+    return render_template("weather.html", get_weather=darkskyapi.get_weather('45.585709', '-122.590981'))
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', port='80')
