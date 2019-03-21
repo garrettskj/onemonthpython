@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <div class="container">
+        <h1>{{ greetingjinja }}
+            {% for number in range(10,0,-1) %}
+            <p>{{ number }}</p>
+            {% endfor %}
+            General Kenobi!</h1>
+        <a href="http://www.google.com" class="btn btn-primary">press to google!</a>
+    </div>
+<html>
